@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>page title</title>
+	<meta name="description" content="page description">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/preview.jpg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="/lpex/WEBUI-DEVKIT/node_modules/bxslider/dist/jquery.bxslider.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+	
+</head>
+
+<body>
+	<!-- Шапка -->
+	<header class="header d-flex align-content-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-md-3 logo-mob">
+					<div class="header__logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+				</div>
+				<div class="col-md-5 d-none d-md-block col-lg-6">
+					<div class="header__consult">
+						<div class="consult">
+							<div class="consult__title">
+								бесплатная консультация
+							</div>
+							<div class="consult__number">
+								<a href="tel:+78122425600"></a>+7 (812) 242-56-00
+							</div>
+							<div class="consult__zvonok">
+								<a href="#">заказать обратный звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3 zayavka-mob">
+					<div class="header__zayavka">
+						<button  type="button" class="zayavka-btn" data-toggle="modal" data-target="#exampleModal">
+							Онлайн-заявка
+						</button>
+					</div>
+				</div>
+				<div class="col-2 text-right gamburger">
+					<div class="header__menu">
+						<button type="button">
+							<img src="img/gamburger.png" alt="menu">
+						</button>
+					</div>
+				</div>
+				<!-- <div class="col-12 d-block d-md-none">
+					<div class="header__zayavka">
+						<button  type="button" class="zayavka-btn" data-toggle="modal" data-target="#exampleModal">
+							Онлайн-заявка
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</header>
+	<!-- Меню -->
+	<nav class="nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="menu d-flex justify-content-between align-items-stretch" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Как мы работаем</a>
+				        </li>
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Описание процессов</a></li>
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Проекты</a>
+				        </li>
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Получить договор</a></li>
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Наши преимущества</a></li>
+				        <li class="menu__item" itemprop="name"><a itemprop="url" href="#">Контакты</a>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Содержимое страницы-->
+	<main>
+		<!-- секция 1 -->
+		<section class="sect1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="sect1__title">
+								обучение и аттестация специалистов неразрушающего контроля
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- секция 2 - опрос -->
+		<section>
+			<div class="sect2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="opros">
+								<div class="row">
+									<div class="col-md-9 offset-md-3 p-md-0">
+										<!-- Вкладки опроса -->
+										<ul class="opros__tabs nav nav-tabs" id="myTab" role="tablist">
+											<li class="nav-item" >
+												<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" >
+													Описание
+												</a>
+											</li>
+											  <li class="nav-item">
+												<a class="nav-link" id="methods-tabs" data-toggle="tab" href="#methods" role="tab" aria-controls="methods" >
+													Методы контроля
+												</a>
+											</li>
+											  <li class="nav-item">
+												<a class="nav-link" id="object-tab" data-toggle="tab" href="#object" role="tab" aria-controls="object" >
+													Объект контроля
+												</a>
+											</li>
+											  <li class="nav-item">
+												<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" >
+													Контакты
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div >
+								<!-- Контент вкладок -->	
+								<div class="tab-content opros-content " id="myTabContent">
+									<!-- Этап 1-->
+									<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+										<div class="row flex-column-reverse flex-md-row">
+											<div class="col-12 col-md-3 p-md-0">
+													<!-- Левая часть - скидка -->
+													<div class="opros__skidka">
+														Ваша скидка <span>5%</span> 
+													</div>
+											</div>
+										<div class="col-md-9 ">
+											<!-- Правая часть -->
+											<div class="opros__descr pt-4">
+												<div class="row justify-content-center">
+													<div class="col-10 col-md-6 col-xl-5 pl-lg-4">
+														<!-- Вопросы -->
+														<div class="main">
+															<div class="main__block main__block_count">
+																<span>Количество человек:</span>
+																<div class="count-people input-bordered ">
+																	<div class="count-people__input ">
+																		<input type="tel" value="3">
+																	</div>
+																	<div class="count-people__arrow">
+																		<button type="button">
+																			&#9650;
+																		</button>
+																		<button type="button">
+																			&#9660;
+																		</button>
+																	</div>
+																	
+																</div>
+															</div>
+															<div class="main__block">
+																<div class="city">
+																	<span>Город:</span>
+																	<div class="city__input input-bordered ">
+																		<input type="text ">
+																	</div>
+																</div>
+																
+															</div>
+															<div class="main__block main__block_attest">
+																<span>Тип аттестации:</span>
+																<div class="type-atestat">
+																	<input type="radio" id="first" name="attestat" checked>
+																	<label for="first">Первичная</label>
+																</div>
+																<div class="type-atestat">
+																	<input type="radio" id="second" name="attestat">
+																	<label for="second">Вторичная</label>
+																</div>
+																
+															</div>
+															<div class="main__block main__block_date">
+																<span>Даты:</span>
+																<div class="date input-bordered">
+																	<input type="text">
+																</div>
+															</div>
+															<!-- Кнопка далее -->
+															<div class="main__btn">
+																<button  type="button" class="next-step">Далее</button>
+															</div>
+														</div>
+													</div>
+													<!-- Картинка справа -->
+													<div class="col-md-6 d-none d-md-block col-xl-7 pl-0 pr-4">
+														<div class="main__img"> <img src="img/main.png" alt="step-1" ></div>
+													</div>
+													<!-- Полоса с номером этапа -->
+													<div class="col-11 col-md-12 pr-md-4">
+														<div class="progress-bar">
+															<div class="progress-bar__step progress-bar__step__1" data-step='1'>
+															</div>
+														</div>
+													</div>	
+												</div>	
+												
+											</div>
+										</div>
+										</div>
+									</div>
+									<!-- Этап 2-->
+									<div class="tab-pane fade" id="methods" role="tabpanel" aria-labelledby="methods-tabs">
+										<div class="row flex-column-reverse flex-md-row ">
+											<div class="col-12 col-md-3 p-md-0">
+													<!-- Левая часть - скидка -->
+													<div class="opros__skidka">
+														Ваша скидка <span>5%</span> 
+													</div>
+											</div>
+										<div class="col-md-9 ">
+											<!-- Правая часть -->
+											<div class="opros__descr pt-4">
+												<div class="row justify-content-center">
+													<div class="col-10 col-md-6 col-xl-5 pl-lg-4">
+														<!-- Вопросы -->
+														<div class="main">
+															<div class="main__block">
+																<div class="methods">
+																	<input type="radio" id="m-first" name="methods" checked>
+																	<label for="m-first">Ультразвуковой (УК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-second" name="methods">
+																	<label for="m-second">Радиационный (РК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-third" name="methods">
+																	<label for="m-third">Магнитный (МК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-fourth" name="methods">
+																	<label for="m-fourth">Проникающими веществами (ПВК,ПВТ)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-fifth" name="methods">
+																	<label for="m-fifth">Визуальный и измирительный (ВИК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-sixth" name="methods">
+																	<label for="m-sixth">Акустико-эмисионный (АЭ)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-seventh" name="methods">
+																	<label for="m-seventh">Вихретоковый (ВК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-eighth" name="methods">
+																	<label for="m-eighth">Вибродиагностический (ВД)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-ninth" name="methods">
+																	<label for="m-ninth">Электрический (ЭК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-tenth" name="methods">
+																	<label for="m-tenth">Проникающими веществами - <br>капиллярный (ПВК)</label>
+																</div>
+																<div class="methods">
+																	<input type="radio" id="m-eleventh" name="methods">
+																	<label for="m-eleventh">Проникающими веществами - <br>течеискание (ПВТ)</label>
+																</div>
+															</div>
+															<!-- Кнопка далее -->
+															<div class="main__btn">
+																<button  type="button" class="next-step">
+																		Далее
+																	</button>
+															</div>
+															
+														</div>
+													</div>
+													<!-- Картинка справа -->
+													<div class="col-md-6 d-none d-md-block col-xl-7 pl-0 pr-4">
+															<div class="main__img">
+																<img src="img/step-2.png" alt="step-2" >
+															</div>
+													</div>	
+													<!-- Полоса с номером этапа -->
+													<div class="col-11 col-md-12 pr-md-4">
+														<div class="progress-bar">
+															<div class="progress-bar__step progress-bar__step__2" data-step='2'>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+										</div>
+									</div>
+									<!-- Этап 3-->
+									<div class="tab-pane fade" id="object" role="tabpanel" aria-labelledby="object-tab">
+										<div class="row flex-column-reverse flex-md-row">
+											<div class="col-12 col-md-3 p-md-0">
+													<!-- Левая часть - скидка -->
+													<div class="opros__skidka">
+														Ваша скидка <span>5%</span> 
+													</div>
+											</div>
+										<div class="col-md-9 ">
+											<!-- Правая часть -->
+											<div class="opros__descr pt-4">
+												<div class="row justify-content-center">
+													<div class="col-10 col-md-5 pl-lg-4">
+														<!-- Вопросы -->
+														<div class="main">
+															<div class="main__block">
+																<div class="objects">
+																	<input type="radio" id="o-first" name="objects" checked>
+																	<label for="o-first">Объекты котлонадзора (1)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-second" name="objects">
+																	<label for="o-second">Системы газоснабжения (2)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-third" name="objects">
+																	<label for="o-third">Подъемные сооружения (3)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-fourth" name="objects">
+																	<label for="o-fourth">Объекты горнорудной промышленности (4)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-fifth" name="objects"><label for="o-fifth">Объекты угольной промышленности (5)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-sixth" name="objects"><label for="o-sixth">Оборудование нефтяной и газовой промышленности (6)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-seventh" name="objects"><label for="o-seventh">Оборудование металлургической промышленности (7)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-eigth" name="objects"><label for="o-eigth">Оборудование взрывопожароопасных и химически опасных производств (8)</label>
+																</div>
+																<div class="objects">
+																	<input type="radio" id="o-nineth" name="objects"><label for="o-nineth">Объекты железнодорожного транспорта (9)</label></div>
+																<div class="objects">
+																	<input type="radio" id="o-tenth" name="objects"><label for="o-tenth">Объекты хранения и переработки зерна (10)</label></div>
+																<div class="objects"><input type="radio" id="o-eleventh" name="objects"><label for="o-eleventh">Здания и сооружения (строительные объекты) (11)</label></div>
+																<div class="objects"><input type="radio" id="o-twelth" name="objects"><label for="o-twelth">Оборудование электроэнергетики (12)</label></div>
+																
+															</div>
+															<!-- Кнопка далее -->
+															<div class="main__btn">
+																<button  type="button" class="next-step">
+																		Далее
+																	</button>
+															</div>
+															
+														</div>
+													</div>
+													<!-- Картинка справа -->
+													<div class="col-md-7 d-none d-md-block pl-0 pr-4">
+															<div class="main__img">
+																<img src="img/step-3.png" alt="step-3" >
+															</div>
+													</div>	
+													<!-- Полоса с номером этапа -->
+													<div class="col-11 col-md-12 pr-md-4">
+														<div class="progress-bar">
+															<div class="progress-bar__step progress-bar__step__3" data-step='3'>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+										</div>
+									</div>
+									<!-- Этап 4-->
+									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+										<div class="row flex-column-reverse flex-md-row">
+											<div class="col-12 col-md-3 p-md-0">
+													<!-- Левая часть - скидка -->
+													<div class="opros__skidka">
+														Ваша скидка <span>5%</span> 
+													</div>
+											</div>
+										<div class="col-md-9 ">
+											<!-- Правая часть -->
+											<div class="opros__descr pt-4">
+												<div class="row justify-content-center">
+													<div class="col-10 col-md-5 pl-lg-4">
+														<!-- Вопросы -->
+														<div class="main">
+															<form action="" class="contact">
+																<label for="name" class="contact__label">Имя</label>
+																<div class="contact__inp">
+																	<input type="text" id="name" placeholder="Введите имя">
+																</div>
+																<label for="number" class="contact__label">Номер телефона</label>
+																<div class="contact__inp">
+																	<input type="tel" id="number" placeholder="Введите номер телефона">
+																</div>
+																<label for="email" class="contact__label">Email</label>
+																<div class="contact__inp">
+																	<input type="email" id="email" placeholder="Введите адрес почты">
+																</div>
+															</form>
+															<!-- Кнопка далее -->
+															<div class="main__btn">
+																<button  type="button" class="next-step">
+																		Далее
+																	</button>
+															</div>
+															
+														</div>
+													</div>
+													<!-- Картинка справа -->
+													<div class="col-md-7 d-none d-md-block pl-0 pr-4">
+															<div class="main__img">
+																<img src="img/step-4.png" alt="step-4">
+															</div>
+													</div>	
+													<!-- Полоса с номером этапа -->
+													<div class="col-11 col-md-12 pr-md-4">
+														<div class="progress-bar">
+															<div class="progress-bar__step progress-bar__step__4" data-step="4">
+															</div>
+														</div>
+													</div>
+												</div>	
+											
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="how-work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="how-work__head">
+							как мы работаем
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon1.png" alt=""></div>
+						<div class="how-work__title">Получаем <br> 
+							вашу заявку</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon2.png" alt=""></div>
+						<div class="how-work__title">Согласовываем <br> условия</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon3.png" alt=""></div>
+						<div class="how-work__title">Подписываем <br>
+							договор</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon4.png" alt=""></div>
+						<div class="how-work__title">Оплата и обработка первичных сведений</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon5.png" alt=""></div>
+						<div class="how-work__title">Предаттестационная подготовка</div>
+					</div>
+					<div class="col-6 col-md-4 col-xl-2 mob">
+						<div class="how-work__item"><img src="img/icon6.png" alt=""></div>
+						<div class="how-work__title">Аттестация и оформление удостоверений</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="process">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="process__head">
+								описание процессов
+						</div>
+					</div>
+					<div class="col-md-12 p-0">
+						<div class="slider">
+							<div class="slider__slide" style="background-image: url(img/slider.png);">
+								<div class="slider-descr">
+										Аттестация специалистов НК проходит регулярно раз в месяц, 
+										но возможно и проведения индивидуальных групп
+								</div>
+							</div>
+							<div class="slider__slide" style="background-image: url(img/slider.png);"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="projects__head">реализованные проекты по услуге "аттестация"</div>
+					</div>
+					<div class="col-md-4 col-lg-3 ">
+						<div class="projects__item">
+							<div class="row">
+								<div class="col-12">
+									<div class="item__title">Заказчик:</div>
+								</div>
+								<div class="col-6 col-md-12 mob">
+									<div class="item__img">
+										<img src="img/cds.png" alt="ЦДС">
+									</div>
+								</div>
+								<div class="col-6 col-md-12 mob">
+									<div class="item__descr">
+											Группа компаний «ЦДС» считается одним из крупнейших застройщиков Санкт-Петербурга, имеющего 
+											в активе более 10 строящихся объектов, и продолжая разрабатывать новые проекты 
+											в разных сегментах рынка недвижимости.
+									</div>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-5 mob">
+							<div class="projects__item ">
+								<div class="item__title">Поставленная задача:</div>
+								<div class="item__descr  item__descr__task">
+									<p>Товарищи! реализация намеченных плановых заданий требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+								</div>
+							</div>
+					</div>
+					<div class="col-6 col-md-4 mob">
+							<div class="projects__item ">
+								<div class="item__title">Отзыв заказчика:</div>
+								<div class="item__descr item__descr__review">
+										<p>Руководство Группы компаний «ЦДС» выражает благодарность сотрудникам ООО «ЛенПром Эксперт и НК» за результативную и плодотворную работу по организации повышения квалификации наших специалистов для СРО по строительству.</p>
+										<p>Хотим обратить внимание на профессионализм сотрудников, способных качественно и в установленные сроки решать поставленные задачи.</p>
+										<p>Считаем возможным рекомендовать ООО «ЛПЭиНК» как компетентного и надежного партнера во всех вопросах, связанных с организацией повышения квалификации специалистов.</p>
+										
+								</div>
+							</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="projects__btn">
+							<button type="button">Больше проектов</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contract">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 p-md-0">
+						<div class="contract__head">
+							получить онлайн договор
+						</div>
+					</div>
+					<div class="col-xl-6 m-auto">
+						<div class="contract__form">
+							<form action="">
+								<span>Выберите тип услуги:</span>
+								<div class="type-service">
+									<input type="radio" id="s-first" name="service" checked>
+									<label for="s-first">Обучение</label>
+								</div>
+								<div class="type-service">
+										<input type="radio" id="s-second" name="service" checked>
+										<label for="s-second">Аттестация</label>
+								</div>
+								<span>По вашему желанию введите свой ИНН*</span>
+								<div class="inn__input">
+										<input type="text">
+								</div>
+								<span>Электронная почта:</span>
+								<div class="email__input">
+										<input type="email">
+								</div>
+								<div class="get">
+									<button type="button">Получить договор</button>
+								</div>
+								
+							</form>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="pluses">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="how-work__head">
+							наши преимущества
+						</div>
+					</div>
+					<div class="col-6 col-md mob">
+						<div class="pluses__item"><img src="img/icon7.png" alt=""></div>
+						<div class="pluses__title">Обширная область аттестации (все  методы и объекты)</div>
+					</div>
+					<div class="col-6 col-md mob">
+							<div class="pluses__item"><img src="img/icon8.png" alt=""></div>
+							<div class="pluses__title">Собственная экзаменационная лабораторная база!</div>
+					</div>
+					<div class="col-6 col-md mob">
+							<div class="pluses__item"><img src="img/icon9.png" alt=""></div>
+							<div class="pluses__title">Гарантия <br>качества</div>
+					</div>
+					<div class="col-6 col-md mob">
+							<div class="pluses__item"><img src="img/icon10.png" alt=""></div>
+							<div class="pluses__title">Работаем <br> по всей России</div>
+					</div>
+					<div class="col-6 col-md mob">
+							<div class="pluses__item"><img src="img/icon11.png" alt=""></div>
+							<div class="pluses__title">Гарантия <br> лучшей цены</div>
+					</div>
+				</div>
+			</div>
+		</section>
+			<div class="container">
+				<section class="questions">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="questions__head">остались вопросы?</div>
+					</div>
+				</div>
+				<form action="" class="questions__form">
+					<div class="row ">
+						<div class="col-md-12 col-xl-4">
+							<div class="row justify-content-center">
+								<div class="col-md-7 col-lg-5 col-xl-12">
+									<label for="">Ваше имя</label>
+									<div class="name">
+										<input type="text" placeholder="Введите имя">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-4">
+							<div class="row justify-content-center">
+								<div class="col-md-7 col-lg-5 col-xl-12">
+									<label for="">Email</label>
+									<div class="email">
+										<input type="email" placeholder="Введите вашу почту">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-4">
+							<div class="row justify-content-center">
+								<div class="col-md-7 col-lg-5 col-xl-12">
+									<label for="">Номер телефона</label>
+									<div class="phone">
+										<input type="tel" placeholder="Введите ваш номер телефона">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="get-consult">
+								<button type="button">Получить консультацию</button>	
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>	
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-6 footer__map">
+					<div > 
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.595233897965!2d30.289583187872587!3d60.005205412565395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963414f0b3cd25%3A0x1fd71d49e8dbd315!2z0L_RgC4g0JjRgdC_0YvRgtCw0YLQtdC70LXQuSwgMTMsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTczNDE!5e0!3m2!1sru!2sru!4v1572270191470!5m2!1sru!2sru" width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+						
+				</div>
+				<div class="col-sm-12 col-lg-6">
+					<div class="row">
+						<div class="col-md-4 col-lg-12">
+							<div class="footer__logo">
+									<img src="img/logo.png" alt="logo">
+							</div>
+						</div>
+						<div class="col-md-8 col-lg-12">
+							<div class="footer__number">
+									<span>Телефон:</span> <a href="tel:+78122091495">+7 (812) 209-14-95</a>
+								</div>
+								<div class="footer__addr">
+									<span>Адрес:</span> 197341, Санкт-Петербург, пр. Испытателей, 13А
+								</div>
+								<div class="footer__email">
+									<span>Email:</span ><a href="mail:info@lpex.ru">info@lpex.ru</a>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="footer__copyright">
+									© 2019 LPEx.ru
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Онлайн-заявка</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					
+					<form action="" class="modal-body__form">
+						<label for="">Ваше имя</label>
+						<div class="name">
+							<input type="text" placeholder="Введите имя">
+						</div>
+						<label for="">Email</label>
+						<div class="email">
+							<input type="email" placeholder="Введите вашу почту">
+						</div>
+						<label for="">Ваш номер телефона</label>
+						<div class="phone">
+							<input type="text" placeholder="Введите ваш номер телефона">
+						</div>
+						<div class="submit">
+							<button type="button">Отправить</button>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
